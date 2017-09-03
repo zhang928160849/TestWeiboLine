@@ -13,9 +13,13 @@ import java.util.ArrayList;
  */
 
 public class MyViewPageAdapter extends PagerAdapter {
-    private ArrayList<View> views;
+    private ArrayList<View> views = new ArrayList<>();
 
     public void setViews(ArrayList<View> views){
+        this.views = views;
+    }
+
+    public MyViewPageAdapter(ArrayList<View> views) {
         this.views = views;
     }
 
